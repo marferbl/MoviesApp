@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.global{
+    width: 90%;
+    box-shadow: 0 0 6px -3px;
+    padding: 15px;
+    background-color: white;
+    margin: 10 auto;
+}
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+img{
+    height: 300px;
+    width: 233.66px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+nav h1{
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 50px;
+}
+nav i{
+    color: black;
+    font-size: 40px;
+    margin: 0 10px;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+   
+}
+
+nav input{
+    font-size: 22px;
+    font-family: Poppins;
+    height: 38px;
+    border-radius: 6px;
+    border: 0.5 px solid rgb(197, 197, 233) ;
+    padding: 0 4px;
+
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Poppins;
+    padding: 5px 8px;
+    border: 1px solid black;
+    color: white;
+    background-color: rgb(221, 15, 15);
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.movie-el{
+    border: transparent;
+    box-shadow: 0 0 8px 2px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+   
+    
+}
+
+
+
+.attributes{
+    margin: 0;
+    font-family: Poppins;
+    display: flex;
+    justify-content: space-between;
+    overflow-x:unset;
+    background-color: rgb(255, 0, 0);
+    padding: 6px;
+}
+
+.attributes span {
+  
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: unset;
+    border-radius: 8px;
+}
+
+#star{
+color:yellow;
+line-height: 1px;
+margin-left: 4px;
+}
+.attributes h3{
+    max-width: 160px;
+    height: 90px;
+    font-size: 16px;
+}
+
+.hide{
+    display: none;
+}
+
+.overview{
+    width: 233px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:   white;
+    height: 100%;
+    opacity: 0;
+    padding: 5px;
+    font-family: Poppins;
+    font-size: 12px;
+    
+
+}
+
+.movie-el:hover .overview{
+   opacity: 0.88;
+   transition: opacity 0.4s;
+   transition-timing-function: ease-in;
+}
